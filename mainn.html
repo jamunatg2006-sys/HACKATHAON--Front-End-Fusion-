@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIR MVIT College | Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="mainn.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="header">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="https://www.sirmvit.edu/wp-content/uploads/2025/03/MVIT-Logo.png" alt="SIR MVIT Logo">
+    </div>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Sir MVIT</h1>
+    <p>Shaping future engineers and leaders through excellence and innovation.</p>
+    <a href="admission.html" class="btn">Apply Now</a>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about section">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      Sir M. Visvesvaraya Institute of Technology (Sir MVIT) was founded in 1986 by
+      Sri Krishnadevaraya Educational Trust. The institute offers 13 B.E. programs
+      including AI & ML, CSE, ISE, ECE, Mechanical, Civil, Robotics & AI.
+    </p>
+    <a href="about.html" class="btn-outline">Learn More</a>
+  </div>
+</section>
+
+<!-- ================= DEPARTMENTS ================= -->
+<section class="departments section">
+  <div class="container">
+    <h2>Our Departments</h2>
+
+    <div class="dept-grid">
+      <div class="dept-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Computer Science</h3>
+        <p>AI, Cybersecurity, Software Development.</p>
+      </div>
+
+      <div class="dept-card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Information Science</h3>
+        <p>Data Science, Networking, Intelligent Systems.</p>
+      </div>
+
+      <div class="dept-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Mechanical</h3>
+        <p>Design, Manufacturing, Thermal Sciences.</p>
+      </div>
+
+      <div class="dept-card">
+        <i class="fas fa-building"></i>
+        <h3>Civil</h3>
+        <p>Infrastructure, Construction, Sustainability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADMISSIONS ================= -->
+<section class="admissions section">
+  <div class="container">
+    <h2>Admissions Open</h2>
+    <p>Take the first step toward your engineering career.</p>
+    <a href="admission.html" class="btn">Apply Now</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-flex">
+    <p>© 2025 SIR MVIT College | All Rights Reserved</p>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

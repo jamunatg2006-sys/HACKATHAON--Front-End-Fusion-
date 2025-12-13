@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+/* Gradient background */
+.bg-gradient{
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, #0f172a, #1e3a8a, #020617);
+  z-index: -2;
+}
+
+/* Hero section */
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 60px;
+}
+
+/* Glass card */
+.glass{
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 50px;
+  width: 45%;
+  animation: fadeUp 1.2s ease;
+}
+
+/* Text */
+h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h1 span{
+  color: #38bdf8;
+}
+
+.quote{
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 35px;
+}
+
+/* Button */
+.enter-btn{
+  padding: 14px 38px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: #020617;
+  background: linear-gradient(90deg, #38bdf8, #60a5fa);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+
+.enter-btn:hover{
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(56,189,248,0.9);
+}
+
+/* 3D container */
+#three-container{
+  width: 45%;
+  height: 420px;
+}
+
+/* Animations */
+@keyframes fadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media(max-width: 900px){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+  .glass, #three-container{
+    width: 100%;
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+}

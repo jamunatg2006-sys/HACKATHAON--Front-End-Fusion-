@@ -1,0 +1,180 @@
+/* ==========================
+ FILE: index.css
+ Beautiful Thematic CSS for ABC College
+========================== */
+
+:root {
+    --primary: #1e3a8a;       /* deep blue */
+    --secondary: #0f172a;     /* dark navy */
+    --accent: #38bdf8;        /* sky blue */
+    --bg: #f0f4f8;            /* light background */
+    --text: #334155;          /* main text color */
+    --hover: #2563eb;         /* hover effect */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* ===== Header ===== */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: var(--secondary);
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: var(--accent);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--accent);
+    color: #000;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.hero button:hover {
+    background: white;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== About Section ===== */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background: white;
+    animation: fadeIn 1.6s ease-in-out;
+}
+
+.about h2 {
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    animation: fadeIn 1.5s ease;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 768px) {
+    .header h1 { font-size: 2.2rem; }
+    .hero h2 { font-size: 2rem; }
+    .hero p { font-size: 1.1rem; }
+    .navbar a { margin: 0 12px; font-size: 0.95rem; }
+}
+.logo{
+    width:100%;
+}
